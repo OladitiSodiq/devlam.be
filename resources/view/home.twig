@@ -1,0 +1,15 @@
+{% extends '_partials/layout.twig' %}
+
+{% block styles %}
+    {{ parent() }}
+
+    {{ css.inline('/resources/css/home.scss')|raw }}
+{% endblock %}
+
+{% block backlink %}{% endblock %}
+
+{% block body %}
+    <a href="/christelijke-kinderopvang-hoboken">Christelijke Kinderopvang Hoboken</a>
+    <a href="/het-vlinderhuisje-hoboken">Het Vlinderhuisje Hoboken</a>
+    <a href="/het-speelkasteel">Het Speelkasteel</a>
+{% endblock %}

@@ -1,0 +1,21 @@
+<html>
+<head>
+    {% block head %}
+        <title>Slides</title>
+
+        {% block styles %}
+            {{ css.inline('/resources/css/main.scss')|raw }}
+        {% endblock %}
+    {% endblock %}
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+{% block body %}{% endblock %}
+
+{% block scripts %}
+{% endblock %}
+
+</body>
+</html>

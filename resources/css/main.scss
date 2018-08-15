@@ -1,0 +1,152 @@
+@import 'css/colors';
+
+* {
+    box-sizing: border-box;
+}
+
+body, html {
+    padding: 0;
+    margin: 0;
+    font-size: 18px;
+    font-family: Garamond, Times, "Times New Roman", serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+a {
+    color: $blue;
+    text-decoration: underline;
+
+    &:hover {
+        text-decoration: none;
+        color: darken($blue, 20);
+    }
+}
+
+.banner {
+    overflow: hidden;
+}
+
+.banner > img {
+    clip-path: ellipse(130% 100% at 50% 0%);
+    filter: saturate(1.7);
+}
+
+img {
+    max-width: 100%;
+}
+
+p {
+    font-size: 1.3em;
+    line-height: 1.4em;
+}
+
+h1 {
+    margin: 1em auto;
+    text-align: center;
+}
+
+h1, h2 {
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+.backlink {
+    display: block;
+    margin: 1em auto 0;
+}
+
+.row {
+    width: 1000px;
+    margin: 2em auto 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    img {
+        width: 35%;
+    }
+
+    $margin-small: 1.5em;
+    $margin-large: 10%;
+
+    p {
+        padding-left: $margin-large;
+        margin-right: $margin-small;
+        margin-left: 0;
+        padding-right: 0;
+    }
+
+    img + p {
+        padding-right: $margin-large;
+        margin-left: $margin-small;
+        margin-right: 0;
+        padding-left: 0;
+    }
+
+    @media (max-width: 1050px) {
+        max-width: 100%;
+        display: block;
+
+        & > img {
+            display: block;
+            margin: 0 auto;
+            width: 45%;
+        }
+
+        img + p,
+        p {
+            margin: 0 0;
+            padding: 0 1em;
+        }
+
+        p + img,
+        img + p {
+            margin-top: 1em;
+        }
+    }
+
+
+    @media (max-width: 600px) {
+        & > img {
+            width: 95%;
+        }
+    }
+}
+
+.contact-info {
+    margin-top: 2em;
+    padding: 2em 0;
+    background-color: darken(#fff, 5);
+    font-size: .9em;
+
+    h2 {
+        width: 800px;
+        margin: 0 auto .5em;
+    }
+
+    p {
+        width: 800px;
+        margin: .5em auto 0;
+    }
+
+    @media (max-width: 1050px) {
+        padding: 1em;
+
+        h2 {
+            width: 100%;
+        }
+
+        p {
+            width: 100%;
+            font-size: 1em;
+        }
+    }
+
+    @media (max-width: 600px) {
+        p {
+            font-size: 1em;
+        }
+    }
+}
+
+img {
+    border: 1px solid #444;
+}
