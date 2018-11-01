@@ -1,0 +1,61 @@
+@import 'css/colors';
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+nav > a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 250px;
+    width: 250px;
+    margin: 0 1em;
+
+    border-radius: 5px;
+
+    text-align: center;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    text-decoration: none;
+    color: #fff;
+
+    &:hover {
+        border:5px solid;
+        background-color: #fff;
+    }
+}
+
+a.home-button-blue {
+    background-color: $blue;
+
+    &:hover {
+        color: $blue;
+        border-color: $blue;
+    }
+}
+
+a.home-button-purple {
+    background-color: $purple;
+
+    &:hover {
+        color: $purple;
+        border-color: $purple;
+    }
+}
+
+a.home-button-orange {
+    background-color: $orange;
+
+    &:hover {
+        color: $orange;
+        border-color: $orange;
+    }
+}

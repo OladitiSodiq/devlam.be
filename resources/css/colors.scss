@@ -29,6 +29,54 @@ $purple: #932291;
     color: $purple;
 }
 
+.links-red a {
+    color: $red;
+
+    &:hover {
+        color: darken($red, 10);
+    }
+}
+
+.links-green a {
+    color: $green;
+
+    &:hover {
+        color: darken($green, 10);
+    }
+}
+
+.links-yellow a {
+    color: $yellow;
+
+    &:hover {
+        color: darken($yellow, 10);
+    }
+}
+
+.links-orange a {
+    color: $orange;
+
+    &:hover {
+        color: darken($orange, 10);
+    }
+}
+
+.links-blue a {
+    color: $blue;
+
+    &:hover {
+        color: darken($blue, 10);
+    }
+}
+
+.links-purple a {
+    color: $purple;
+
+    &:hover {
+        color: darken($purple, 10);
+    }
+}
+
 .bg-red {
     background-color: $red;
 }
