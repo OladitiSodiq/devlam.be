@@ -26,8 +26,18 @@ nav > a {
     margin: 1em 1em;
 
     @media (max-width: 800px) {
+        height: 150px;
+        width: 300px;
+    }
+
+    @media (max-width: 400px) {
         height: 100px;
         width: 200px;
+    }
+
+    @media (max-width: 250px) {
+        width: 96%;
+        margin: .5em 2%;
     }
 
     border-radius: 5px;
