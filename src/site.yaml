@@ -1,15 +1,19 @@
 /:
     template: home.twig
+    variables:
+        logo: resources/img/logo-devlam.png
 
 /christelijke-kinderopvang-hoboken:
     template: locations/de-vlam.twig
     variables:
+        logo: resources/img/logo-christelijke-kinderopvang.png
         image1: resources/img/side1.jpg
         image2: resources/img/side4.jpg
 
 /het-vlinderhuisje-hoboken:
     template: locations/het-vlinderhuisje.twig
     variables:
+        logo: resources/img/logo-vlinderhuisje.png
         image1: resources/img/side2.jpg
         image2: resources/img/side3.jpg
 

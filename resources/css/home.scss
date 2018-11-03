@@ -3,7 +3,7 @@
 body {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: start;
 }
 
 nav {
@@ -78,4 +78,9 @@ a.home-button-orange {
         color: $orange;
         border-color: $orange;
     }
+}
+
+.home-logo {
+    width: 150px;
+    margin-bottom: 1em;
 }

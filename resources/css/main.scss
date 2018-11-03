@@ -151,3 +151,18 @@ h1, h2 {
 img {
     border: 1px solid #444;
 }
+
+.logo {
+    width: 500px;
+    margin: 3em auto 1em;
+
+    & > img {
+        border: none;
+    }
+
+
+    @media (max-width: 550px) {
+        width: 96%;
+        margin: 2em 2% 1em;
+    }
+}
